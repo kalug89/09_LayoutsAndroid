@@ -1,52 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="368dp"
-        android:layout_height="495dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:background="@color/colorAccent"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+    <!--<LinearLayout-->
+    <!--android:layout_width="368dp"-->
+    <!--android:layout_height="495dp"-->
+    <!--android:layout_marginBottom="16dp"-->
+    <!--android:layout_marginEnd="16dp"-->
+    <!--android:layout_marginStart="32dp"-->
+    <!--android:layout_marginTop="16dp"-->
+    <!--android:background="@color/colorAccent"-->
+    <!--android:orientation="horizontal"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent">-->
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Button" />
+    <!--<Button-->
+    <!--android:id="@+id/button2"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="Button" />-->
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="TextView" />
+    <!--<TextView-->
+    <!--android:id="@+id/textView4"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="TextView" />-->
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="TextView" />
+    <!--<TextView-->
+    <!--android:id="@+id/textView2"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="TextView" />-->
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="TextView" />
-    </LinearLayout>
-</android.support.constraint.ConstraintLayout>
+    <!--<TextView-->
+    <!--android:id="@+id/textView3"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="TextView" />-->
+    <!--</LinearLayout>-->
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Enter" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_toLeftOf="@+id/button5"
+        android:layout_alignBottom="@id/button5"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Login" />
+
+
+    <TextView
+        android:id="@+id/myText"
+        android:text="TextView"
+        android:layout_toRightOf="@id/button5"
+        android:layout_alignBottom="@id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
